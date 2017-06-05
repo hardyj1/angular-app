@@ -27,7 +27,9 @@ body {
   padding: 5PX 5PX 5PX 5PX;
 }
 
-
+button {
+  border: 1px black;
+}
 
 
 
@@ -107,8 +109,4 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
-}
-
-div {
-    display: block;
 }
