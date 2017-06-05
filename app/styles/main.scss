@@ -8,10 +8,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding: 0;
   background-color: transparent;
-  background-image: url("../images/darkclouds.jpg");
+  background-image: url("../images/sunny.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #000;
+  color: white;
 }
 
 .browsehappy {
@@ -20,18 +20,18 @@ body {
   color: #000;
   padding: 0.2em 0;
 }
+h1 {
+  color:white;
+}
 
 .jumbotron {
+  border-radius: 4%;
   background-color: transparent;
-  color: #000;
-  padding: 5PX 5PX 5PX 5PX;
+  padding: 5PX 5PX 5PX 5PX;}
+
+h1, h3 {
+  font-family: 'Russo One', sans-serif;
 }
-
-button {
-  border: 1px black;
-}
-
-
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -44,7 +44,6 @@ button {
 
 /* Custom page header */
 .header {
-  background-color: transparent;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -56,11 +55,91 @@ button {
   }
 }
 
+.navbar-default .navbar-collapse {
+  background-color: transparent;
+
+}
+
+.navbar-default {
+  background-color: transparent;
+
+  color: white;
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  background-color: transparent;
+
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: white;
+}
+.btn {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin: auto;
+
+  border-color: white;
+}
+
+li .btn {
+  background-color: transparent;
+  color: white;
+
+}
+
+li a:visited {
+  color: #00FFFF;
+}
+
+dl {
+  list-style-type: none;
+  width: 500px;
+  border-radius: 4%;
+  background-color: transparent;
+  color: #E7DFDD;
+  padding: 5PX 5PX 5PX 5PX;
+}
+
+dl img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+dt.ng-binding {
+
+  display: block;
+  color: white;
+  font-size:1.2em;
+}
+
+p.city-saved-alert {
+  background-color: #A239CA;
+  color: #E7DFDD;
+  padding: 5px 5px 5px 5px;
+}
 /* Custom page footer */
 .footer {
-  padding-top: 80px;
-  color: #000;
-  border: none;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
@@ -70,10 +149,10 @@ button {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #e5e5e5;
 
-  .btn {
-    font-size: 21px;
+.jumbotron .btn {
+
     padding: 14px 24px;
   }
 }
@@ -93,6 +172,10 @@ button {
     max-width: 730px;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -100,7 +183,6 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
-
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
@@ -108,5 +190,15 @@ button {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+
+  p label input {
+    color: black;
+    padding: 5px;
+  }
+
+  .footer {
+    border: none;
+    color: white;
   }
 }
