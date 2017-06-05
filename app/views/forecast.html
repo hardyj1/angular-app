@@ -1,6 +1,6 @@
 <h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(forecastData.city)">Save City</button></p>
-<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="removeCity(currentWeather)">Remove City</button></p>
+<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(forecastData.city)">Save {{forecastData.city.name}} to favorites</button></p>
+<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="removeCity(forecastData.city)">Remove {{forecastData.city.name}} from favorites</button></p>
 <div ng-messages="citySaved">
     <p class="city-saved-alert bg-success text-success" ng-message="success">
         {{forecastData.city.name}} has been added to your favorites.

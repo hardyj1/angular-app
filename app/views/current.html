@@ -1,6 +1,6 @@
 <h1>Current Weather for {{currentWeather.name}}</h1>
-<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
-<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="removeCity(currentWeather)">Remove City</button></p>
+<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save {{currentWeather.name}} to favorites</button></p>
+<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="removeCity(currentWeather)">Remove {{currentWeather.name}} from favorites</button></p>
 <div ng-messages="citySaved">
     <p class="city-saved-alert bg-success text-success" ng-message="success">
         {{currentWeather.name}} has been added to your favorites.
